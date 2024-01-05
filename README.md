@@ -41,8 +41,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 <div id="dynamic-routing">
 
-# Dynamic routing sample code 
+ 
 
+<details>
+<summary><code># Dynamic routing sample code</code></summary>
 ```bash
 import React from 'react'
 
@@ -56,7 +58,7 @@ export default function Detail({ params }:{
     )
 }
 ```
-    
+</details>
 </div>
 
 
