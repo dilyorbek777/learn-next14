@@ -58,10 +58,18 @@ export default function Detail({ params }:{
 
 # Dynamic Nested routing 
 
-## Structure
+## Structure folders
 
 ```bash
-[id]/review/[reviewid]
+app
+|___products
+|___________[id]
+|___________page.tsx
+|_______________reviews
+|______________________[reviewid]
+|_________________________________page.tsx
+
+
 ```
 ## Sample code 
 
