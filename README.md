@@ -63,11 +63,11 @@ export default function Detail({ params }:{
 ```bash
 app
 |___products
+|___|_______page.tsx
 |___________[id]
-|___________page.tsx
-|_______________reviews
-|______________________[reviewid]
-|_________________________________page.tsx
+|___________|___reviews
+|_______________|______[reviewid]
+|______________________|_________page.tsx
 
 
 ```
