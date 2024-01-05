@@ -36,7 +36,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-# Dynamic  routing 
+# Example of codes
 <details>
 <summary><code>Dynamic routing</code></summary>
 
@@ -61,6 +61,9 @@ export default function Detail({ params }:{
 # Dynamic Nested routing 
 
 ## Structure folders
+
+<details>
+<summary><code>Dynamic nested routing</code></summary>
 
 ```bash
 app
@@ -92,7 +95,7 @@ export default function ReviewDetail({ params }: {
 }
 
 ```
-
+</details>
 
 # Catch all Segments
 
