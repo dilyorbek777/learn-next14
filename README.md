@@ -339,3 +339,72 @@ export default function Detail({ params }: Props) {
 </details>
 
 
+
+
+<details>
+<summary><code>Metadata titles</code></summary>
+
+# Metadata titles
+
+## Structure folders
+
+```bash
+app
+|___(auth)
+|___|_____login
+|___|__________page.tsx
+|___products
+|___|_______[id]
+|___________|___page.tsx
+```
+## Sample code 
+
+
+<summary><code>login/page.tsx</code></summary>
+
+```bash
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Login"
+}
+export default function Login() {
+  return (
+    <div>Login</div>
+  )
+}
+
+```
+
+
+<summary><code>products/[id]/page.tsx</code></summary>
+
+```bash
+import { Metadata } from "next"
+type Props = {
+    params: {
+        id: string
+    }
+}
+export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+    const title = await new Promise(resolve => {
+        setTimeout(() => {
+            resolve(`iphone ${params.id}`)
+        }, 100)
+    })
+    return {
+        title: {
+            absolute: `Product: ${title} ` // absolute applies the only absolute title of page
+        }
+    }
+}
+
+
+
+export default function Detail({ params }: Props) {
+    return (
+        <div>Product Details page {params.id}</div>
+    )
+}
+```
+</details>
