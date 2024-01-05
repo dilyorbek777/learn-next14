@@ -56,8 +56,14 @@ export default function Detail({ params }:{
 
 
 
-# Dynamic Nested routing sample code 
+# Dynamic Nested routing 
 
+## Structure
+
+```bash
+[id]/review/[reviewid]
+```
+## Sample code 
 
 ```bash
 import React from 'react'
