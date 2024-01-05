@@ -129,3 +129,23 @@ export default function Docs({
 
 ```
 
+
+# Custom Not Found 404 page
+
+## Structure folders
+
+```bash
+app
+|___not-found.tsx
+```
+## Sample code 
+
+```bash
+import React from 'react'
+
+export default function NotFound() {
+  return (
+    <div>NotFound 404 </div>
+  )
+}
+```
