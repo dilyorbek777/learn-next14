@@ -164,3 +164,65 @@ export default function NotFound() {
 }
 ```
 </details>
+
+
+
+
+
+<details>
+<summary><code>Custom Not Found 404 page for dynamic pages (Optional)</code></summary>
+
+# Custom Not Found 404 page for dynamic pages 
+
+## Structure folders
+
+```bash
+app
+|___products
+|___|_______page.tsx
+|___________[id]
+|___________|___reviews
+|_______________|______[reviewid]
+|______________________|_________page.tsx
+|______________________|_________not-found.tsx
+```
+## Sample code 
+
+<summary><code>not-found.tsx</code></summary>
+
+```bash
+import React from 'react'
+
+export default function NotFound() {
+  return (
+    <div>NotFound review</div>
+  )
+}
+
+```
+<summary><code>page.tsx</code></summary>
+
+```bash
+import { notFound } from 'next/navigation';
+import React from 'react'
+
+export default function ReviewDetail({ params }: {
+    params: {
+        id: string;
+        reviewid: string;
+    }
+}) {
+    if (parseInt(params.reviewid)>1000) {
+        notFound();
+    }
+    return (
+        <h1>
+            Review {params.reviewid} for product {params.id}
+        </h1>
+    )
+}
+
+
+```
+
+</details>
