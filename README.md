@@ -296,3 +296,44 @@ export default function Products() {
 
 ```
 </details>
+
+<details>
+<summary><code>The use of Metadata in Dynamic pages</code></summary>
+
+# Metadata in dynamic routes
+
+## Structure folders
+
+```bash
+app
+|___products
+|___________[id]
+|_______________page.tsx
+```
+## Sample code 
+
+```bash
+import { Metadata } from "next"
+type Props = {
+    params: {
+        id: string
+    }
+}
+export const generateMetadata = async ({params}:Props): Promise<Metadata>=>{
+    const title =await new Promise(resolve=>{
+        setTimeout(()=>{
+            resolve(`iphone ${params.id}`)
+        },100)
+    })
+    return {
+        title: `Product: ${title} `
+    }
+}
+
+export default function Detail({ params }: Props) {
+    return (
+        <div>Product Details page {params.id}</div>
+    )
+}
+```
+</details>
