@@ -190,6 +190,8 @@ app
 
 <summary><code>not-found.tsx</code></summary>
 
+
+
 ```bash
 import React from 'react'
 
@@ -201,6 +203,8 @@ export default function NotFound() {
 
 ```
 <summary><code>page.tsx</code></summary>
+
+
 
 ```bash
 import { notFound } from 'next/navigation';
