@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://github.com/dilyorbek777/learn-next14/blob/main/public/next.svg" style="background-color:#fff" alt="Project Banner">
+      <img src="https://strapi.dhiwise.com/uploads/nextjs_14_Main_Image_075e7f4fdc.webp" style="background-color:#fff" alt="Project Banner">
   <br />
 
 
@@ -319,24 +319,23 @@ type Props = {
         id: string
     }
 }
-export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-    const title = await new Promise(resolve => {
-        setTimeout(() => {
+export const generateMetadata = async ({params}:Props): Promise<Metadata>=>{
+    const title =await new Promise(resolve=>{
+        setTimeout(()=>{
             resolve(`iphone ${params.id}`)
-        }, 100)
+        },100)
     })
     return {
         title: `Product: ${title} `
     }
 }
 
-
-
 export default function Detail({ params }: Props) {
     return (
         <div>Product Details page {params.id}</div>
     )
 }
-
 ```
 </details>
+
+
