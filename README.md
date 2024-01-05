@@ -61,7 +61,7 @@ export default function Detail({ params }:{
 
 
 <details>
-<summary><code>Dynamic nested routing</code></summary>
+<summary><code>Nested Dynamic  routing</code></summary>
 
 
 # Dynamic Nested routing 
@@ -142,7 +142,7 @@ export default function Docs({
 </details>
 
 <details>
-<summary><code>Dynamic routing</code></summary>
+<summary><code>Custom Not Found 404 page</code></summary>
 
 # Custom Not Found 404 page
 
