@@ -99,6 +99,8 @@ export default function ReviewDetail({ params }: {
 ```
 </details>
 
+<details>
+<summary><code>Catch all Segments</code></summary>
 # Catch all Segments
 
 ## Structure folders
@@ -135,7 +137,8 @@ export default function Docs({
 
 
 ```
-
+</details>
+<summary><code>Dynamic routing</code></summary>
 
 # Custom Not Found 404 page
 
