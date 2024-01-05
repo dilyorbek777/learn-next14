@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://strapi.dhiwise.com/uploads/nextjs_14_Main_Image_075e7f4fdc.webp" style="background-color:#fff" alt="Project Banner">
+      <img src="https://strapi.dhiwise.com/uploads/nextjs_14_Main_Image_075e7f4fdc.webp" style="borde-radius:24px" alt="Project Banner">
   <br />
 
 
