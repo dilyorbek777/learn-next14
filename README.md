@@ -58,10 +58,18 @@ export default function Detail({ params }:{
 
 # Dynamic Nested routing 
 
-## Structure
+## Structure folders
 
 ```bash
-[id]/review/[reviewid]
+app
+|___products
+|___|_______page.tsx
+|___________[id]
+|___________|___reviews
+|_______________|______[reviewid]
+|______________________|_________page.tsx
+
+
 ```
 ## Sample code 
 
@@ -82,3 +90,42 @@ export default function ReviewDetail({ params }: {
 }
 
 ```
+
+
+# Catch all Segments
+
+## Structure folders
+
+```bash
+app
+|___docs
+|___|____[[...slug]]
+|________|__________page.tsx
+```
+## Sample code 
+
+```bash
+
+import React from 'react'
+
+export default function Docs({
+    params,
+}: {
+    params: {
+        slug: string[]
+    }
+}) {
+    if (params.slug?.length === 2) {
+        return <div>Docs for feature {params.slug[0]} and consept of {params.slug[1]}</div>
+    }
+    else if (params.slug?.length === 1) {
+        return <>Docs for feature {params.slug[0]}</>
+    }
+    return (
+        <div>Docs</div>
+    )
+}
+
+
+```
+
