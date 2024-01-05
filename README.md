@@ -1,8 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/986hztrfaSQ?feature=shared" target="_blank" bgcolor="#fff">
       <img src="https://github.com/dilyorbek777/learn-next14/blob/main/public/next.svg" style="background-color:#fff" alt="Project Banner">
-    </a>
   <br />
 
   <div>
