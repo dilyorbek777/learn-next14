@@ -4,14 +4,16 @@ type Props = {
         id: string
     }
 }
-export const generateMetadata = async ({params}:Props): Promise<Metadata>=>{
-    const title =await new Promise(resolve=>{
-        setTimeout(()=>{
+export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+    const title = await new Promise(resolve => {
+        setTimeout(() => {
             resolve(`iphone ${params.id}`)
-        },100)
+        }, 100)
     })
     return {
-        title: `Product: ${title} `
+        title: {
+            absolute: `Product: ${title} `
+        }
     }
 }
 
