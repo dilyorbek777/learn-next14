@@ -39,7 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 <details>
 <summary><code>Dynamic routes</code></summary>
-<br>
+<br/>
 ```bash
 import React from 'react'
 
