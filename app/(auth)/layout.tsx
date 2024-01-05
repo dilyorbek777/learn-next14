@@ -20,7 +20,7 @@ export default function AuthLayout({
                 const isActive = pathname.startsWith(link.href)
 
                 return (
-                    <Link href={link.href} className={isActive? 'font-bold mr-4':"text-blue-700"} key={link.href} >
+                    <Link href={link.href} className={isActive ? 'font-bold mr-4' : "text-blue-700"} key={link.href} >
                         {link.name}
                     </Link >
                 )
