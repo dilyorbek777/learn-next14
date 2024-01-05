@@ -40,7 +40,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 <details>
 <summary><code>Dynamic routing</code></summary>
 
-
+# Dynamic  routing 
 
 ```bash
 import React from 'react'
@@ -58,13 +58,15 @@ export default function Detail({ params }:{
 
 </details>
 
-# Dynamic Nested routing 
 
-## Structure folders
 
 <details>
 <summary><code>Dynamic nested routing</code></summary>
 
+
+# Dynamic Nested routing 
+
+## Structure folders
 ```bash
 app
 |___products
