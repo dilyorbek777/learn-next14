@@ -529,6 +529,7 @@ export default function AuthLayout({
 </details>
 
 <details>
+
 <summary><code>UseRouter | navigating</code></summary>
 
 # Navigating programmatically
@@ -562,6 +563,38 @@ export default function OrderPage() {
         </div>
     )
 }
+
+```
+</details>
+
+
+<details>
+
+<summary><code>UseRouter | navigating</code></summary>
+
+# Navigating programmatically
+
+## Structure folders
+
+```bash
+app
+|___products
+|___|_______loading.tsx
+```
+## Sample code 
+
+
+
+```bash
+
+import React from 'react'
+
+export default function Loading() {
+  return (
+    <div>Loading please wait</div>
+  )
+}
+
 
 ```
 </details>
