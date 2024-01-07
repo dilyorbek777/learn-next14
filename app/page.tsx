@@ -7,6 +7,7 @@ export default function Home() {
       Home
       <Link href={'/products'}>
         Products List
+        
       </Link>
     </>
   )
