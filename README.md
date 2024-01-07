@@ -570,9 +570,9 @@ export default function OrderPage() {
 
 <details>
 
-<summary><code>UseRouter | navigating</code></summary>
+<summary><code>Loading UI</code></summary>
 
-# Navigating programmatically
+# Page Loading
 
 ## Structure folders
 
